@@ -1,0 +1,38 @@
+{
+    "name": "mazecode/laravel-md5",
+    "description": "Add MD5 hash encription to Laravel 5.x project",
+    "type": "library",
+    "keywords": ["laravel", "md5", "hash", "extend"],
+    "license": "MIT",
+    "homepage": "https://github.com/mazecode/laravel-md5",
+    "authors": [{
+        "name": "Diego Feliú",
+        "email": "dfeliud@gmail.com",
+        "homepage": "https://github.com/mazecode"
+    }],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "orchestra/testbench": "3.8.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mazecode\\LaravelMd5\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mazecode\\LaravelMd5\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mazecode\\LaravelMd5\\LaravelMd5ServiceProvider"
+            ]
+        }
+    }
+}
